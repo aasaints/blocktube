@@ -4,7 +4,7 @@
   // Do not run on already opened YouTube tabs
   if (document.body) {
     document.location.reload();
-    console.info('Please refresh this tab to activate BlockTube');
+    console.info('Por Favor atualize esta guia para ativar o BlockTube_pt_BR');
     return;
   }
 
@@ -32,7 +32,7 @@
 
   const events = {
     contextBlock(data) {
-      const entries = [`// Blocked by context menu (${data.info.text})`];
+      const entries = [`// Bloqueado pelo menu de contexto (${data.info.text})`];
       const id = Array.isArray(data.info.id) ? data.info.id : [data.info.id];
       entries.push(...id);
       entries.push('');

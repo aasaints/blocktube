@@ -1,7 +1,7 @@
 {
-  "name": "BlockTube",
+  "name": "BlockTube_pt_BR",
   "version": "{EXT_VERSION}",
-  "description": "YouTube™ content blocker",
+  "description": "Bloqueador de conteúdo paa o YouTube™",
   "manifest_version": 2,
   "content_scripts": [
     {
@@ -13,7 +13,7 @@
   ],
   "web_accessible_resources": ["src/scripts/inject.js"],
   "browser_action": {
-    "default_title": "BlockTube Options",
+    "default_title": "BlockTube Opções",
     "default_icon": {
       "16": "assets/icons/16.png",
       "48": "assets/icons/48.png",
@@ -40,5 +40,5 @@
           "id": "{58204f8b-01c2-4bbc-98f8-9a90458fd9ef}"
       }
   },
-  "homepage_url": "https://github.com/amitbl/blocktube"
+  "homepage_url": "https://github.com/aasaints/blocktube_pt_BR"
 }

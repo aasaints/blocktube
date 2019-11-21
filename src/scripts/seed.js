@@ -20,7 +20,7 @@
   const hooks = {
     menuOnTap(event) {
       const menuAction = this.getElementsByTagName('yt-formatted-string')[0].textContent;
-      if (!['Block Channel', 'Block Video'].includes(menuAction)) {
+      if (!['Bloquear Canal', 'Bloquear Video'].includes(menuAction)) {
         if (this.onTap_) this.onTap_(event);
         return;
       }
@@ -64,12 +64,12 @@
       }
 
       switch (menuAction) {
-        case 'Block Channel': {
+        case 'Bloquear Canal': {
           type = 'channelId';
           data = channelData;
           break;
         }
-        case 'Block Video': {
+        case 'Bloquear Video': {
           type = 'videoId';
           data = videoData;
           break;
@@ -83,7 +83,7 @@
         if (removeParent) {
           parentDom.dismissedRenderer = {
             notificationMultiActionRenderer: {
-              responseText: {simpleText: 'Blocked'},
+              responseText: {simpleText: 'Bloquead'},
             }
           };
           parentDom.setAttribute('is-dismissed', '');
@@ -163,7 +163,7 @@
 
   // Start
   if (window.writeEmbed || window.ytplayer || window.Polymer) {
-    console.error('We may have lost the battle, but not the war');
+    console.error('Podemos ter perdido a batalha, mas não a guerra');
     return;
   }
 

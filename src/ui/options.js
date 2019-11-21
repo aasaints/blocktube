@@ -20,7 +20,7 @@
   function saveData(label = undefined) {
     if (!isLoggedIn) return;
     chrome.storage.local.set({ storageData }, () => {
-      if (label !== undefined) setLabel(label, 'Options Saved');
+      if (label !== undefined) setLabel(label, 'Opções salvas');
     });
   }
 
@@ -49,7 +49,7 @@
       unlockPage();
       isLoggedIn = true;
     } else {
-      setLabel('status_login', 'Incorrect Password');
+      setLabel('status_login', 'Senha Incorreta');
     }
   }
 
@@ -150,7 +150,7 @@
           saveForm();
         }
       } catch (ex) {
-        alert('This is not a valid BlockTube backup');
+        alert('Este não é um backup válido do BlockTube_pt_BR');
       }
     };
     reader.readAsText(f);

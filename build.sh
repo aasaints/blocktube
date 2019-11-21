@@ -44,12 +44,12 @@ build() {
 if [ "$1" == "firefox" ]; then
     DEST=$BASEDIR/dist/firefox
     BROWSER=firefox
-    echo "Building Firefox to $DEST"
+    echo "Construindo a Extensão Firefox para $DEST"
     build
 elif [ "$1" == "chrome" ]; then
     DEST=$BASEDIR/dist/chrome
     BROWSER=chrome
-    echo "Building Chrome to $DEST"
+    echo "Criando a Extensão Chrome para $DEST"
     build
 else
     clean
